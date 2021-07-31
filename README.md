@@ -7,4 +7,6 @@
 </div>
 
 # pokeGame
-simple pokemon game consuming pokeAPI
+simple pokemon game consuming pokeAPI.
+
+The NEXT btn doesn't work yet.
