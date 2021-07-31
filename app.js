@@ -18,4 +18,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       location.reload();
     }
   });
+
+  var confettiSettings = { target: "my-canvas" };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
 });

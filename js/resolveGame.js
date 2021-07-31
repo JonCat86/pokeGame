@@ -3,6 +3,7 @@ export default async function resolveGame(pokemon) {
   document.addEventListener("click", (e) => {
     //click option
     if (e.target.matches(".list-options li")) {
+      e.target.classList.add("selected");
       document.querySelector(".list-options").style.pointerEvents = "none";
       setTimeout(async () => {
         const data = await fetch(pokemon.species.url);
@@ -27,17 +28,18 @@ export default async function resolveGame(pokemon) {
           typeItem.innerHTML = type.type.name;
           pdx.querySelector(".pdx-type-items").appendChild(typeItem);
         });
+
+        if (e.target.getAttribute("data-name") === pokeName) {
+          e.target.classList.add("correct");
+          document.getElementById("my-canvas").style.visibility = "visible";
+        } else {
+          e.target.classList.add("wrong");
+        }
+
         document
           .querySelector(`li[data-name='${pokeName}']`)
           .classList.add("correct");
       }, 1200);
-      //if correct
-      if (e.target.getAttribute("data-name") === pokeName) {
-        e.target.classList.add("correct");
-        //if wrong
-      } else {
-        e.target.classList.add("wrong");
-      }
       setTimeout(() => {
         document.querySelector(".pokemon-img").classList.add("show");
       }, 480);
