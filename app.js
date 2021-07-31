@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   document.addEventListener("click", (e) => {
     if (e.target.matches(".next-btn") || e.target.matches(".next-btn *")) {
+      location.reload();
     }
   });
 });

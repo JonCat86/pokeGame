@@ -30,7 +30,7 @@ export default async function resolveGame(pokemon) {
         document
           .querySelector(`li[data-name='${pokeName}']`)
           .classList.add("correct");
-      }, 1500);
+      }, 1200);
       //if correct
       if (e.target.getAttribute("data-name") === pokeName) {
         e.target.classList.add("correct");

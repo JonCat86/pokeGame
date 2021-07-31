@@ -7,8 +7,9 @@
 </div>
 
 # pokeGame
+
 A simple pokemon game consuming pokeAPI.
 
-The NEXT btn doesn't work yet.
+The NEXT btn works with location.reload(). I want to change it but for now it does its work.
 
-Not optimitzed for mobile yet.
+Not optimized for mobile yet.
