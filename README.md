@@ -7,6 +7,8 @@
 </div>
 
 # pokeGame
-simple pokemon game consuming pokeAPI.
+A simple pokemon game consuming pokeAPI.
 
 The NEXT btn doesn't work yet.
+
+Not optimitzed for mobile yet.
