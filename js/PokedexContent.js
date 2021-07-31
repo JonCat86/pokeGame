@@ -14,10 +14,6 @@ export default function PokedexContent() {
     <span class="char-box-item-text height">???</span>
   </div>
   <div class="char-box-item">
-    <span class="char-box-item-title">Category</span>
-    <span class="char-box-item-text category">???</span>
-  </div>
-  <div class="char-box-item">
     <span class="char-box-item-title">Weight</span>
     <span class="char-box-item-text weight">???</span>
   </div>
@@ -25,6 +21,11 @@ export default function PokedexContent() {
     <span class="char-box-item-title">Habitat</span>
     <span class="char-box-item-text habitat">???</span>
   </div>
+    <div class="char-box-item">
+    <span class="char-box-item-title">Category</span>
+    <span class="char-box-item-text category">???</span>
+  </div>
+  
 </div>
 <div class="pdx-type-box">
   <h3>Type:</h3>
